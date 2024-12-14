@@ -21,7 +21,7 @@ function validateEmail() {
     return email.value;
 
 }
-
+const aboutTitle = document.createElement('h2');
 const browser = document.createElement("p");
   browser.innerHTML = ` 
     ${window.navigator.appCodeName} | 
