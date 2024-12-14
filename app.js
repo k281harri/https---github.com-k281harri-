@@ -22,6 +22,10 @@
         memberName.textContent = member.name;
         const memberBio = document.createElement('p');
         memberBio.textContent = member.bio;
+
+        // Adding innerHTML to bioDiv
+        bioDiv.innerHTML = `<strong>${member.name}</strong>: ${member.bio}`;
+ 
         
         bioDiv.appendChild(memberImg);
         bioDiv.appendChild(memberName);
@@ -39,4 +43,4 @@ const browser = document.createElement("p");
   browser.innerHTML = ` 
     ${window.navigator.appCodeName} | 
     ${window.navigator.appName} | 
-    ${version}`;}
+    ${version}`;
