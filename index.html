@@ -1,44 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Girls Fanpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
 
-<!DOCTYPE html><html lang="en-US"> 
-     <head>    
-        <meta charset="UTF-8" />    
-        <meta name="viewport" content="width=device-width" />    
-        <title>Spice Girls Fanpage</title>    
-        <link rel="stylesheet" href="style.css" />  
-    </head>  
-    <body>    
-        <h1>Welcome to the Spice Girls Fanpage</h1>    
-        <h2>About the Spice Girls</h2>    
-        <h3 style="color: red;">Last Header Tag</h3>  
-    </body></html>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Name Input Form</title>
-    </head>
-    <body>
-        <form id="nameForm">
-            <label for="nameInput">Enter your name:</label>
-            <input type="text" id="nameInput" name="name" required>
-            <button type="submit">Submit</button>
-        </form>
-    
-        <script>
-            // Event listener for form submission
-            const thisForm = document.querySelector('#nameForm');
-            const thisForma = document.getElementById('nameForm');
-            thisForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                 // Prevent the default form submission
-                const name = document.getElementById('nameInput').value; 
-                // Get the name input value
-                console.log(`Name submitted: ${name}`); 
-            });
-        </script>
-    </body>
-    </html>
+        header {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-                <script src="app.js" ></script>
-     </body>
+        header h1 {
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: #ff1493;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .bio-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .bio {
+            width: 300px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .bio h3 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #ff1493;
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Spice Girls Fanpage</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#members">Members</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2 class="section-title">Welcome to the Spice Girls Fanpage!</h2>
+        <p>Celebrating the iconic girl group that took the world by storm! The Spice Girls redefined pop culture in the 90s and remain a symbol of girl power. Let's take a look back at their incredible legacy!</p>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">Spice Girls Gallery</h2>
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Spice_Girls_1997.jpg" alt="Spice Girls Image 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Spice_Girls_1996.jpg" alt="Spice Girls Image 2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Spice_Girls_in_Moscow_1998.jpg" alt="Spice Girls Image 3">
+        </div>
+    </section>
+
+    <section id="members">
+        <h2 class="section-title">Meet the Spice Girls</h2>
+        <div class="bio-section">
+            <div class="bio">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Victoria_Beckham_2015.jpg" alt="Victoria Beckham">
+                <h3>Victoria Beckham</h3>
+                <p>The fashion-forward "Posh Spice" known for her chic style and understated elegance.</p>
+            </div>
+            <div class="bio">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Melanie_Brown_2017.jpg" alt="Melanie Brown">
+                <h3>Melanie Brown</h3>
+                <p>Known as "Scary Spice," Mel B is a powerhouse performer with an infectious personality.</p>
+            </div>
+            <div class="bio">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Emma_Bunton_2017.jpg" alt="Emma Bunton">
+                <h3>Emma Bunton</h3>
+                <p>The sweet and sassy "Baby Spice," Emma brought a playful, youthful charm to the group.</p>
+            </div>
+            <div class="bio">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Geri_Halliwell_2016.jpg" alt="Geri Halliwell">
+                <h3>Geri Halliwell</h3>
+                <p>Known as "Ginger Spice," Geri is the bold, fiery spirit who helped propel the group to global stardom.</p>
+            </div>
+            <div class="bio">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Melanie_C_2014.jpg" alt="Melanie Chisholm">
+                <h3>Melanie Chisholm</h3>
+                <p>"Sporty Spice" is the athletic and energetic member who brings a competitive edge to the group.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Spice Girls Fanpage | Celebrating Girl Power</p>
+</footer>
+
+</body>
+</html>
