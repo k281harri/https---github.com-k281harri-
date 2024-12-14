@@ -12,6 +12,9 @@
         {name: 'Melanie Chisholm', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Melanie_C_2014.jpg', bio: '"Sporty Spice" is the athletic and energetic member who brings a competitive edge to the group.'}
     ];
 
+        const container = document.getElementById('container');
+        const fragment = document.createDocumentFragment();
+
     membersData.forEach(member => {
         const bioDiv = document.createElement('div');
         bioDiv.className = 'bio';
