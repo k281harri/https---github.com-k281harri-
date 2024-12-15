@@ -28,6 +28,14 @@
 
         // Adding innerHTML to bioDiv
         bioDiv.innerHTML = `<strong>${member.name}</strong>: ${member.bio}`;
+
+        //function validateEmail() {
+          //  if (email.value === "") {
+        //      window.alert("Please provide an email address.");
+          //    email.focus();
+         //     return false;
+        //    }
+          //  return email.value;
  
         
         bioDiv.appendChild(memberImg);
