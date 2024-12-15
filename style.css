@@ -1,20 +1,18 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(
 
- header {
-    margin: 0;
-    display:     flex;
-
-
-
-
-
-}
-
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">   
+        <title>CSS Code Example</title>
+     </head>
+     <body>  
+       <div class="code-section" id="css-section">    
+           <h2 class="code-title">CSS Code</h2>      
+             <div class="code-box">           
+       
+            </div>  
+        </div>
+    </body>
+   </html>
